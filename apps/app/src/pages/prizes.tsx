@@ -1,4 +1,3 @@
-import { Button } from '@shared/ui'
 import { SECONDS_PER_DAY } from '@shared/utilities'
 import { GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
@@ -31,7 +30,6 @@ export default function PrizesPage() {
       <CheckPrizesBanner />
       <PrizesHeader />
       <Link href='/vaults' passHref={true}>
-        <Button>{t('depositToWin')}</Button>
       </Link>
       <PrizePoolDisplay className='mt-8' />
       <PrizePoolWinners className='mt-8' />

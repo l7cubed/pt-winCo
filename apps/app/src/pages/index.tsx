@@ -1,4 +1,3 @@
-import { Button } from '@shared/ui'
 import { LINKS, SECONDS_PER_DAY } from '@shared/utilities'
 import classNames from 'classnames'
 import { GetStaticProps } from 'next'
@@ -29,11 +28,7 @@ export default function HomePage() {
   return (
     <Layout className='gap-8'>
       <HomeHeader />
-      <Link href='/vaults' passHref={true}>
-        <Button>{t('depositToWin')}</Button>
-      </Link>
       <PrizePoolCards />
-      <CabanaPoweredBy />
     </Layout>
   )
 }
