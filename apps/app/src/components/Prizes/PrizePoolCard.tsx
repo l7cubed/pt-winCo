@@ -28,8 +28,6 @@ export const PrizePoolCard = (props: PrizePoolCardProps) => {
   const isTokenEquivalentHidden = useMemo(() => {
     const wethTokenAddress =
       prizePool.chainId === NETWORK.mainnet ||
-      prizePool.chainId === NETWORK.optimism ||
-      prizePool.chainId === NETWORK.arbitrum ||
       prizePool.chainId === NETWORK.base
         ? WRAPPED_NATIVE_ASSETS[prizePool.chainId]
         : undefined

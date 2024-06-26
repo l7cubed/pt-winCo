@@ -17,17 +17,10 @@ export const usePublicClients = (options?: { useAll?: boolean }): PublicClient[]
   } = {
     mainnets: [
       usePublicClient({ chainId: NETWORK.mainnet }),
-      usePublicClient({ chainId: NETWORK.optimism }),
-      usePublicClient({ chainId: NETWORK.arbitrum }),
-      usePublicClient({ chainId: NETWORK.base }),
-      usePublicClient({ chainId: NETWORK.polygon }),
-      usePublicClient({ chainId: NETWORK.avalanche }),
-      usePublicClient({ chainId: NETWORK.celo })
+      usePublicClient({ chainId: NETWORK.base })
     ],
     testnets: [
       usePublicClient({ chainId: NETWORK.sepolia }),
-      usePublicClient({ chainId: NETWORK.optimism_sepolia }),
-      usePublicClient({ chainId: NETWORK.arbitrum_sepolia }),
       usePublicClient({ chainId: NETWORK.base_sepolia })
     ]
   }
@@ -63,17 +56,10 @@ export const usePublicClientsByChain = (options?: {
   } = {
     mainnets: {
       [NETWORK.mainnet]: usePublicClient({ chainId: NETWORK.mainnet }),
-      [NETWORK.optimism]: usePublicClient({ chainId: NETWORK.optimism }),
-      [NETWORK.arbitrum]: usePublicClient({ chainId: NETWORK.arbitrum }),
-      [NETWORK.base]: usePublicClient({ chainId: NETWORK.base }),
-      [NETWORK.polygon]: usePublicClient({ chainId: NETWORK.polygon }),
-      [NETWORK.avalanche]: usePublicClient({ chainId: NETWORK.avalanche }),
-      [NETWORK.celo]: usePublicClient({ chainId: NETWORK.celo })
+      [NETWORK.base]: usePublicClient({ chainId: NETWORK.base })
     },
     testnets: {
       [NETWORK.sepolia]: usePublicClient({ chainId: NETWORK.sepolia }),
-      [NETWORK.optimism_sepolia]: usePublicClient({ chainId: NETWORK.optimism_sepolia }),
-      [NETWORK.arbitrum_sepolia]: usePublicClient({ chainId: NETWORK.arbitrum_sepolia }),
       [NETWORK.base_sepolia]: usePublicClient({ chainId: NETWORK.base_sepolia })
     }
   }
