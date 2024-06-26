@@ -1,11 +1,11 @@
 {
-  "short_name": "Cabana Factory",
-  "name": "Cabana Vault Factory App",
+  "short_name": "Vault Factory",
+  "name": "Nouns Win Vault Factory",
   "description": "Create and manage your own PoolTogether ERC-4626 vaults.",
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#8050E3",
-  "background_color": "#21064E",
+  "theme_color": "#2BA36F",
+  "background_color": "#2ba3",
   "display": "fullscreen",
   "icons": [
     {
