@@ -25,9 +25,9 @@ export const useAllDeployedVaultAddresses = () => {
           const addresses = await getVaultAddressesFromFactory(publicClient)
           vaultAddresses.push(...addresses)
 
-          if (chainId === NETWORK.optimism) {
+          if (chainId === NETWORK.base) {
             const oldAddresses = await getVaultAddressesFromFactory(publicClient, {
-              factoryAddress: '0xF0F151494658baE060034c8f4f199F74910ea806'
+              factoryAddress: '0x06F258A4A5869Ae3fDfcf43fC6be0bb4840F649C'
             })
             vaultAddresses.push(...oldAddresses)
           }
