@@ -29,12 +29,12 @@ export type NETWORK_NAME = keyof typeof NETWORK
 /**
  * POOL token addresses
  */
-export const POOL_TOKEN_ADDRESSES = {
+export const NOUNS_TOKEN_ADDRESSES = {
   [NETWORK.mainnet]: '0x0cEC1A9154Ff802e7934Fc916Ed7Ca50bDE6844e',
   [NETWORK.polygon]: '0x25788a1a171ec66Da6502f9975a15B609fF54CF6',
   [NETWORK.optimism]: '0x395ae52bb17aef68c2888d941736a71dc6d4e125',
   [NETWORK.arbitrum]: '0xCF934E2402A5e072928a39a956964eb8F2B5B79C',
-  [NETWORK.base]: '0xd652C5425aea2Afd5fb142e120FeCf79e18fafc3',
+  [NETWORK.base]: '0x0a93a7BE7e7e426fC046e204C44d6b03A302b631',
   [NETWORK.optimism_sepolia]: '0x24Ffb8Ca3DeA588B267A15F1d94766dCbA034aE6',
   [NETWORK.arbitrum_sepolia]: '0x02A32F041C16158bcC1CaA90e22B230958eD5c4b',
   [NETWORK.base_sepolia]: '0x50Ac98a0CA373a3935069A8755D895663d2F4A16'
@@ -474,9 +474,9 @@ export const TOKEN_PRICE_REDIRECTS: {
 } = {
   [NETWORK.optimism]: {
     /* POOL */
-    [POOL_TOKEN_ADDRESSES[NETWORK.optimism].toLowerCase()]: {
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.optimism].toLowerCase()]: {
       chainId: NETWORK.mainnet,
-      address: lower(POOL_TOKEN_ADDRESSES[NETWORK.mainnet])
+      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     },
     /* USDA */
     '0x0000206329b97db379d5e1bf586bbdb969c63274': {
@@ -491,9 +491,9 @@ export const TOKEN_PRICE_REDIRECTS: {
   },
   [NETWORK.arbitrum]: {
     /* POOL */
-    [POOL_TOKEN_ADDRESSES[NETWORK.arbitrum].toLowerCase()]: {
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum].toLowerCase()]: {
       chainId: NETWORK.mainnet,
-      address: lower(POOL_TOKEN_ADDRESSES[NETWORK.mainnet])
+      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     },
     /* USDA */
     '0x0000206329b97db379d5e1bf586bbdb969c63274': {
@@ -508,9 +508,9 @@ export const TOKEN_PRICE_REDIRECTS: {
   },
   [NETWORK.base]: {
     /* POOL */
-    [POOL_TOKEN_ADDRESSES[NETWORK.base].toLowerCase()]: {
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.base].toLowerCase()]: {
       chainId: NETWORK.mainnet,
-      address: lower(POOL_TOKEN_ADDRESSES[NETWORK.mainnet])
+      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     },
     /* wstETH */
     '0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452': {
@@ -577,9 +577,9 @@ export const TOKEN_PRICE_REDIRECTS: {
       address: WRAPPED_NATIVE_ASSETS[NETWORK.mainnet] as Lowercase<Address>
     },
     /* POOL */
-    [POOL_TOKEN_ADDRESSES[NETWORK.optimism_sepolia].toLowerCase()]: {
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.optimism_sepolia].toLowerCase()]: {
       chainId: NETWORK.mainnet,
-      address: lower(POOL_TOKEN_ADDRESSES[NETWORK.mainnet])
+      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     }
   },
   [NETWORK.arbitrum_sepolia]: {
@@ -604,9 +604,9 @@ export const TOKEN_PRICE_REDIRECTS: {
       address: WRAPPED_NATIVE_ASSETS[NETWORK.mainnet] as Lowercase<Address>
     },
     /* POOL */
-    [POOL_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia].toLowerCase()]: {
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia].toLowerCase()]: {
       chainId: NETWORK.mainnet,
-      address: lower(POOL_TOKEN_ADDRESSES[NETWORK.mainnet])
+      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     }
   },
   [NETWORK.base_sepolia]: {
@@ -631,9 +631,9 @@ export const TOKEN_PRICE_REDIRECTS: {
       address: WRAPPED_NATIVE_ASSETS[NETWORK.mainnet] as Lowercase<Address>
     },
     /* POOL */
-    [POOL_TOKEN_ADDRESSES[NETWORK.base_sepolia].toLowerCase()]: {
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.base_sepolia].toLowerCase()]: {
       chainId: NETWORK.mainnet,
-      address: lower(POOL_TOKEN_ADDRESSES[NETWORK.mainnet])
+      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     }
   }
 }

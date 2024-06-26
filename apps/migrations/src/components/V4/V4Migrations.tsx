@@ -1,5 +1,5 @@
 import { TokenIcon } from '@shared/react-components'
-import { NETWORK, POOL_TOKEN_ADDRESSES } from '@shared/utilities'
+import { NETWORK, NOUNS_TOKEN_ADDRESSES } from '@shared/utilities'
 import classNames from 'classnames'
 import { Address } from 'viem'
 import { SimpleBadge } from '@components/SimpleBadge'
@@ -25,7 +25,7 @@ export const V4Migrations = (props: V4MigrationsProps) => {
 const V4Badge = () => (
   <SimpleBadge>
     <TokenIcon
-      token={{ chainId: NETWORK.mainnet, address: POOL_TOKEN_ADDRESSES[NETWORK.mainnet] }}
+      token={{ chainId: NETWORK.mainnet, address: NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet] }}
     />
     V4 Pools
   </SimpleBadge>

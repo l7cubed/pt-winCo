@@ -18,7 +18,7 @@ import {
   zerionWallet
 } from '@rainbow-me/rainbowkit/wallets'
 import { Token, TokenWithLogo } from '@shared/types'
-import { NETWORK, POOL_TOKEN_ADDRESSES } from '@shared/utilities'
+import { NETWORK, NOUNS_TOKEN_ADDRESSES } from '@shared/utilities'
 import { Address } from 'viem'
 import { arbitrum, avalanche, celo, mainnet, optimism, polygon } from 'viem/chains'
 
@@ -493,9 +493,9 @@ export const V3_POOLS: Record<
 export const V3_REWARD_TOKENS: { [chainId: number]: Token } = {
   [NETWORK.mainnet]: {
     chainId: NETWORK.mainnet,
-    address: POOL_TOKEN_ADDRESSES[NETWORK.mainnet],
-    symbol: 'POOL',
-    name: 'PoolTogether',
+    address: NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet],
+    symbol: 'NOUNS',
+    name: 'Nouns Token',
     decimals: 18
   }
 }

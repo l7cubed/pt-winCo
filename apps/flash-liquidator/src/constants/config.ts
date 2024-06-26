@@ -17,7 +17,7 @@ import {
   xdefiWallet,
   zerionWallet
 } from '@rainbow-me/rainbowkit/wallets'
-import { NETWORK, POOL_TOKEN_ADDRESSES } from '@shared/utilities'
+import { NETWORK, NOUNS_TOKEN_ADDRESSES } from '@shared/utilities'
 import { LiquidationPair, SupportedNetwork } from 'src/types'
 import { Address } from 'viem'
 import { arbitrum, mainnet, optimism } from 'viem/chains'
@@ -86,7 +86,7 @@ export const TOKENS = {
     'USDC': '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
     'DAI': '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
     'WETH': '0x4200000000000000000000000000000000000006',
-    'POOL': POOL_TOKEN_ADDRESSES[NETWORK.optimism]
+    'POOL': NOUNS_TOKEN_ADDRESSES[NETWORK.optimism]
   }
 } as const
 

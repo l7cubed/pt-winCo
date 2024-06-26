@@ -2,7 +2,7 @@ import {
   DOLPHIN_ADDRESS,
   LINKS,
   NETWORK,
-  POOL_TOKEN_ADDRESSES,
+  NOUNS_TOKEN_ADDRESSES,
   USDC_TOKEN_ADDRESSES
 } from '@shared/utilities'
 
@@ -32,7 +32,7 @@ const tokenLogoUrls = {
 export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>]: string }> = {
   [NETWORK.mainnet]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.mainnet].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet].toLowerCase()]: tokenLogoUrls.pool,
     '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48': tokenLogoUrls.usdc,
     '0x6b175474e89094c44da98b954eedeac495271d0f': tokenLogoUrls.dai,
     '0x056fd409e1d7a124bd7017459dfea2f387b6d5cd': tokenLogoUrls.gusd,
@@ -49,7 +49,7 @@ export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>
   [NETWORK.bsc_testnet]: {},
   [NETWORK.xdai]: {},
   [NETWORK.polygon]: {
-    [POOL_TOKEN_ADDRESSES[NETWORK.polygon].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.polygon].toLowerCase()]: tokenLogoUrls.pool,
     '0x2791bca1f2de4661ed88a30c99a7a9449aa84174': tokenLogoUrls.usdc,
     '0x3c499c542cef5e3811e1192ce70d8cc03d5c3359': tokenLogoUrls.usdc,
     '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063': tokenLogoUrls.dai,
@@ -62,7 +62,7 @@ export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>
   [NETWORK.mumbai]: {},
   [NETWORK.optimism]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.optimism].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.optimism].toLowerCase()]: tokenLogoUrls.pool,
     '0x7f5c764cbc14f9669b88837ca1490cca17c31607': tokenLogoUrls.usdc,
     '0x0b2c639c533813f4aa9d7837caf62653d097ff85': tokenLogoUrls.usdc,
     '0xda10009cbd5d07dd0cecc66161fc93d7c9000da1': tokenLogoUrls.dai,
@@ -77,7 +77,7 @@ export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>
   },
   [NETWORK.optimism_sepolia]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.optimism_sepolia].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.optimism_sepolia].toLowerCase()]: tokenLogoUrls.pool,
     [USDC_TOKEN_ADDRESSES[NETWORK.optimism_sepolia]]: tokenLogoUrls.usdc,
     '0xef38f21ec5477f6e3d4b7e9f0dea44a788c669b0': tokenLogoUrls.dai,
     '0x68f92539f64e486f2853bb2892933a21b54829e5': tokenLogoUrls.gusd,
@@ -92,7 +92,7 @@ export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>
   [NETWORK.celo_testnet]: {},
   [NETWORK.arbitrum]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.arbitrum].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum].toLowerCase()]: tokenLogoUrls.pool,
     '0xaf88d065e77c8cc2239327c5edb3a432268e5831': tokenLogoUrls.usdc,
     '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8': tokenLogoUrls.usdc,
     '0x82af49447d8a07e3bd95bd0d56f35241523fbab1': tokenLogoUrls.weth,
@@ -102,14 +102,14 @@ export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>
   },
   [NETWORK.arbitrum_sepolia]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia].toLowerCase()]: tokenLogoUrls.pool,
     [USDC_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia]]: tokenLogoUrls.usdc,
     '0xfe045beefda06606fc5f441ccca2fe8c903e9725': tokenLogoUrls.dai,
     '0x060fad1bca90e5b1efca0d93febec96e638fd8a6': tokenLogoUrls.weth
   },
   [NETWORK.base]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.base].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.base].toLowerCase()]: tokenLogoUrls.pool,
     '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913': tokenLogoUrls.usdc,
     '0x50c5725949a6f0c72e6c4a641f24049a917db0cb': tokenLogoUrls.dai,
     '0x4200000000000000000000000000000000000006': tokenLogoUrls.weth,
@@ -120,7 +120,7 @@ export const TOKEN_LOGO_OVERRIDES: Record<NETWORK, { [address: Lowercase<string>
   },
   [NETWORK.base_sepolia]: {
     [DOLPHIN_ADDRESS]: tokenLogoUrls.eth,
-    [POOL_TOKEN_ADDRESSES[NETWORK.base_sepolia].toLowerCase()]: tokenLogoUrls.pool,
+    [NOUNS_TOKEN_ADDRESSES[NETWORK.base_sepolia].toLowerCase()]: tokenLogoUrls.pool,
     [USDC_TOKEN_ADDRESSES[NETWORK.base_sepolia]]: tokenLogoUrls.usdc,
     '0xe4b4a71923aecb4b8924bda8c31941a8ab50ff86': tokenLogoUrls.dai,
     '0x019aa44d02715e4042b1ba3b4d2fa9bcef33c002': tokenLogoUrls.weth

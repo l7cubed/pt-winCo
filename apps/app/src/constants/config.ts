@@ -17,7 +17,7 @@ import {
   xdefiWallet,
   zerionWallet
 } from '@rainbow-me/rainbowkit/wallets'
-import { NETWORK, POOL_TOKEN_ADDRESSES, USDC_TOKEN_ADDRESSES } from '@shared/utilities'
+import { NETWORK, NOUNS_TOKEN_ADDRESSES, USDC_TOKEN_ADDRESSES } from '@shared/utilities'
 import defaultVaultList from '@vaultLists/default'
 import { Address, parseUnits } from 'viem'
 import {
@@ -148,21 +148,21 @@ export const TWAB_REWARDS_SETTINGS: {
   [NETWORK.optimism_sepolia]: {
     tokenAddresses: [
       USDC_TOKEN_ADDRESSES[NETWORK.optimism_sepolia],
-      POOL_TOKEN_ADDRESSES[NETWORK.optimism_sepolia]
+      NOUNS_TOKEN_ADDRESSES[NETWORK.optimism_sepolia]
     ],
     fromBlock: QUERY_START_BLOCK[NETWORK.optimism_sepolia]
   },
   [NETWORK.arbitrum_sepolia]: {
     tokenAddresses: [
       USDC_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia],
-      POOL_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia]
+      NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia]
     ],
     fromBlock: QUERY_START_BLOCK[NETWORK.arbitrum_sepolia]
   },
   [NETWORK.base_sepolia]: {
     tokenAddresses: [
       USDC_TOKEN_ADDRESSES[NETWORK.base_sepolia],
-      POOL_TOKEN_ADDRESSES[NETWORK.base_sepolia]
+      NOUNS_TOKEN_ADDRESSES[NETWORK.base_sepolia]
     ],
     fromBlock: QUERY_START_BLOCK[NETWORK.base_sepolia]
   }
