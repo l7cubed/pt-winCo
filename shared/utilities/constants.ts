@@ -390,7 +390,7 @@ export const TWAB_REWARDS_ADDRESSES: { [chainId: number]: Address } = {
  */
 export const VAULT_FACTORY_ADDRESSES: { [chainId: number]: Address } = {
   [NETWORK.optimism]: '0x0c379e9b71ba7079084ada0d1c1aeb85d24dfd39',
-  [NETWORK.base]: '0xe32f6344875494ca3643198d87524519dc396ddf',
+  [NETWORK.base]: '0x06f258a4a5869ae3fdfcf43fc6be0bb4840f649c',
   [NETWORK.arbitrum]: '0x44be003e55e7ce8a2e0ecc3266f8a9a9de2c07bc',
   [NETWORK.optimism_sepolia]: '0x5ecc83b1a0ba255713b69154451826a937702435',
   [NETWORK.arbitrum_sepolia]: '0x8895efb4299bce2c7e4a5c434c49534bb357bdbc',
@@ -402,7 +402,7 @@ export const VAULT_FACTORY_ADDRESSES: { [chainId: number]: Address } = {
  */
 export const LIQUIDATION_PAIR_FACTORY_ADDRESSES: { [chainId: number]: Address } = {
   [NETWORK.optimism]: '0x80F86691632d9863E6bCaa472e5c34574F77c7D1',
-  [NETWORK.base]: '0x8557a9a33b573dc4403708c5a8746a52648374ea',
+  [NETWORK.base]: '0x8973ec00f1a7344dfa01d616e62b3c45f091f32a',
   [NETWORK.arbitrum]: '0x163402522fc0c0a7863479a069a8470fb22dfd3f',
   [NETWORK.optimism_sepolia]: '0x99e05e2346885D1c1Ce714c9e794A7ca6E3634b4',
   [NETWORK.arbitrum_sepolia]: '0xe098c4340329f0b0b72eb25e193a70eadb2499f7',
@@ -414,7 +414,7 @@ export const LIQUIDATION_PAIR_FACTORY_ADDRESSES: { [chainId: number]: Address } 
  */
 export const DEFAULT_CLAIMER_ADDRESSES: { [chainId: number]: Address } = {
   [NETWORK.optimism]: '0x0b5a1dc536D5A67C66D00B337E6b189385BD8438',
-  [NETWORK.base]: '0x5ffeee76d1e2d2d1d18ba0bc77d8d047b85e1e87',
+  [NETWORK.base]: '0x7e9cb99bbe3c025e2f60c65af579eff16bc04c36',
   [NETWORK.arbitrum]: '0x1e68e5e92d22aefdc791a61c874c06831023e571',
   [NETWORK.optimism_sepolia]: '0xac2be4D9C0d8841c1f0Af43A564BDF2EF3Df3954',
   [NETWORK.arbitrum_sepolia]: '0x24ad9015e48951f74f33dc071af34a6db14e95d9',
@@ -426,7 +426,7 @@ export const DEFAULT_CLAIMER_ADDRESSES: { [chainId: number]: Address } = {
  */
 export const LIQUIDATION_ROUTER_ADDRESSES: { [chainId: number]: Address } = {
   [NETWORK.optimism]: '0x7766b5E6839a1a218Fc861b0810C504490876136',
-  [NETWORK.base]: '0xa9c937a0d1d22ad79099aea10efa62a270dfc22c',
+  [NETWORK.base]: '0x1a4c825827350ac9b9c0b763667b1192dee28953',
   [NETWORK.arbitrum]: '0x7b4a60964994422bf19ae48a90fbff806767db73',
   [NETWORK.optimism_sepolia]: '0x4694F3CD7fedD269aaF2a168e12C544f829a6b50',
   [NETWORK.arbitrum_sepolia]: '0xb420f83c5936762e6fe0ceef16440df83479d3b7',

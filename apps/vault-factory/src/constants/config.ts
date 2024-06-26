@@ -34,11 +34,7 @@ import {
  * Supported networks
  */
 export const SUPPORTED_NETWORKS = [
-  NETWORK.optimism,
-  NETWORK.arbitrum,
   NETWORK.base,
-  NETWORK.optimism_sepolia,
-  NETWORK.arbitrum_sepolia,
   NETWORK.base_sepolia
 ] as const
 
@@ -109,85 +105,12 @@ export const NETWORK_CONFIG: Record<
     }[]
   }
 > = {
-  [NETWORK.optimism]: {
-    description: 'The OG optimistic rollup on Ethereum.',
-    prizePool: '0xF35fE10ffd0a9672d0095c435fd8767A7fe29B55',
-    claimer: DEFAULT_CLAIMER_ADDRESSES[NETWORK.optimism],
-    lp: { targetAuctionPeriod: SECONDS_PER_HOUR * 6, targetAuctionPriceUsd: 10 },
-    yieldSources: [
-      {
-        id: 'beefy',
-        name: 'Beefy',
-        href: 'https://beefy.finance/',
-        description: 'Multichain yield optimizer',
-        vaults: [
-          { address: '0x1dBD083e1422c8c7AcD7091F5437e8C2854F25f4', tags: ['lp'] },
-          { address: '0xCC60ebB05b1E327Ccb4F6c297B9404fdD2Ff5fC2', tags: ['lp'] },
-          { address: '0x6d5e473D909d2f09DBFfA08E4F64B8d9E3748360', tags: ['stablecoin'] },
-          { address: '0xEb0f1cBDac4Ff1BeE4a9806C664f517B099bFbC3', tags: ['stablecoin'] },
-          { address: '0x0654BE5e04827e7B999fcE537882270798F57FE9', tags: ['lp'] },
-          { address: '0x4a9Bff2f96b441b2E8f7142285B4E708BD18a721', tags: ['lp'] },
-          { address: '0xA240fEd2198E2549C090b7b6b3b7748f9330E88a', tags: ['lp'] },
-          { address: '0xEcbe6Eef225f143EE4Eb26368a2f6BE1E60835bC', tags: ['lp'] },
-          { address: '0xAc314aa0FB72aa53A100AaF55A4CF9d9949FF9c0', tags: ['lp'] },
-          { address: '0x60c20e80355e92Ef2f1CD96E07088F1b0AF46124' }
-        ]
-      }
-    ]
-  },
-  [NETWORK.arbitrum]: {
-    description: `Arbitrum's flagship optimistic rollup on Ethereum.`,
-    prizePool: '0x52E7910C4C287848C8828e8b17b8371f4Ebc5D42',
-    claimer: DEFAULT_CLAIMER_ADDRESSES[NETWORK.arbitrum],
-    lp: { targetAuctionPeriod: SECONDS_PER_HOUR * 6, targetAuctionPriceUsd: 10 },
-    yieldSources: []
-  },
   [NETWORK.base]: {
     description: `Coinbase's optimistic rollup on Ethereum.`,
-    prizePool: '0x45b2010d8A4f08b53c9fa7544C51dFd9733732cb',
+    prizePool: '0xE22e70C2a316cc74a847Ea369688f1Cf192C8b12',
     claimer: DEFAULT_CLAIMER_ADDRESSES[NETWORK.base],
     lp: { targetAuctionPeriod: SECONDS_PER_HOUR * 6, targetAuctionPriceUsd: 10 },
     yieldSources: []
-  },
-  [NETWORK.optimism_sepolia]: {
-    description: 'Sepolia testnet for the Optimism network.',
-    prizePool: '0x122FecA66c2b1Ba8Fa9C39E88152592A5496Bc99',
-    claimer: DEFAULT_CLAIMER_ADDRESSES[NETWORK.optimism_sepolia],
-    lp: { targetAuctionPeriod: SECONDS_PER_HOUR * 6, targetAuctionPriceUsd: 10 },
-    yieldSources: [
-      {
-        id: 'aave',
-        name: 'Faux Aave',
-        href: 'https://aave.com/',
-        description: 'Lending and borrowing protocol',
-        vaults: [
-          { address: '0x6cDfb8288F5445255F9dfF6782471DE7556fD481', tags: ['stablecoin'] },
-          { address: '0x19f8F337C72C430cFDe9EC07D5C51639ad143bd5', tags: ['stablecoin'] },
-          { address: '0x14A1EDBB4723AA163A11742Df934C53C43feEC23', tags: ['stablecoin'] },
-          { address: '0xaF9Ad81aB225Fe2d24dD2067a38A4CE69Ec07784' },
-          { address: '0xDD41e571f0f7614Ae37935538f92589363843266' }
-        ]
-      }
-    ]
-  },
-  [NETWORK.arbitrum_sepolia]: {
-    description: 'Sepolia testnet for the Arbitrum network.',
-    prizePool: '0x51211a6b7aa15b3f1063f151ec3343898cd7bd75',
-    claimer: DEFAULT_CLAIMER_ADDRESSES[NETWORK.arbitrum_sepolia],
-    lp: { targetAuctionPeriod: SECONDS_PER_HOUR * 6, targetAuctionPriceUsd: 10 },
-    yieldSources: [
-      {
-        id: 'aave',
-        name: 'Faux Aave',
-        href: 'https://aave.com/',
-        description: 'Lending and borrowing protocol',
-        vaults: [
-          { address: '0x6Cfe985a336bCA7356b73dE6a83d2dA1B1ddC234', tags: ['stablecoin'] },
-          { address: '0x3d7A9ab3744259C20019972b09c661fb9F9aEdfd', tags: ['stablecoin'] },
-          { address: '0xE96dA2357f5A6fD3ECd7E3436ea10726394CB99d' }
-        ]
-      }
-    ]
   },
   [NETWORK.base_sepolia]: {
     description: 'Sepolia testnet for the Base network.',

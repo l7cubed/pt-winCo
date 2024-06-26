@@ -16,7 +16,7 @@ class MyDocument extends Document {
   }
 
   render() {
-    const title = 'Cabana Factory'
+    const title = 'winNouns Factory'
     const description = 'Create and manage your PoolTogether Hyperstructure ERC-4626 vaults.'
     const keywords =
       'pooltogether prize savings win save protocol blockchain vault 4626 ethereum tool factory'
@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <link rel='icon' href='/favicon.png' type='image/x-icon' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 
-          <meta name='theme-color' content='#21064e' />
+          <meta name='theme-color' content='#2BA36F' />
           <meta name='description' content={description} />
           <meta name='keywords' content={keywords} />
           <meta name='author' content='Generation Software' />
