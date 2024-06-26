@@ -4,7 +4,7 @@ import { NETWORK } from '@shared/utilities'
 export const baseVaults: VaultList['tokens'] = [
   {
     chainId: NETWORK.base,
-    address: '0x211bdd83efc530f21b22620fa7f2a6b5aeec8352',
+    address: '0x82536B14f6D89E8409B292df5e93C14056aeEdEE',
     name: 'Win NOUNS',
     decimals: 18,
     symbol: 'winNOUNS',
