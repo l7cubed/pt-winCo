@@ -26,16 +26,16 @@ module.exports = {
             300: '#B18CFF',
             400: '#9B6AFF',
             500: '#8050E3',
-            600: '#6538C1',
+            600: '#191919',
             700: '#4C249F',
-            800: '#36147D',
+            800: '#2BA36F',
             900: '#24095B',
             DEFAULT: '#8050E3'
           },
           teal: {
-            light: '#35F0D0',
-            dark: '#0DC5A5',
-            DEFAULT: '#35F0D0'
+            light: '#2BA36F',
+            dark: '#2BA36F',
+            DEFAULT: '#2BA36F'
           },
           pink: {
             light: '#FA48E8',
@@ -44,10 +44,10 @@ module.exports = {
           },
           bg: {
             purple: {
-              light: '#5D3A97',
-              dark: '#2D0C66',
-              darker: '#21064E',
-              DEFAULT: '#2D0C66'
+              light: '#191919',
+              dark: '#191919',
+              darker: '#191919',
+              DEFAULT: '#191919'
             }
           },
           warning: {
