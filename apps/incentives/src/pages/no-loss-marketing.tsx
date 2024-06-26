@@ -13,7 +13,7 @@ export default function NoLossMarketingPage() {
           <>
             <li>
               Choose prize vault(s) in which you have a balance. If you don't have any yet, deposit
-              through the <ResourceLink href={LINKS.app}>Cabana App</ResourceLink>.
+              through the <ResourceLink href={LINKS.app}>Nouns Win</ResourceLink>.
             </li>
             <li>
               Collect user addresses you would like to delegate to. Some example methods could be
@@ -24,7 +24,7 @@ export default function NoLossMarketingPage() {
             <span>
               Each prize vault balance can be delegated to a single user address. You can do so
               easily through the "delegate" button on the{' '}
-              <ResourceLink href={LINKS.app}>Cabana App</ResourceLink>. To delegate a vault balance
+              <ResourceLink href={LINKS.app}>Nouns WIn</ResourceLink>. To delegate a vault balance
               to two user addresses, send some of the balance to another wallet, and delegate
               through that.
             </span>

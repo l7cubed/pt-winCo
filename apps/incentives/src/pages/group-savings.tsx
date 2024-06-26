@@ -42,7 +42,7 @@ export default function GroupSavingsPage() {
             href: 'https://partydao.notion.site/592ff02b6e1c4a0ca6fe76bc0b0cb9a4'
           },
           {
-            name: 'Cabana App',
+            name: 'Nouns Win',
             href: LINKS.app
           }
         ]}

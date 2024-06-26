@@ -78,7 +78,7 @@
     }
   },
   "Vaults": {
-    "depositAndWin": "Deposit tokens, <highlight>win prizes</highlight>. Withdraw anytime, <highlight>no loss</highlight>",
+    "depositAndWin": "Deposit tokens. <highlight>Win prizes</highlight>. Withdraw anytime.",
     "filter": "Filter",
     "filters": {
       "showAll": "Show All",

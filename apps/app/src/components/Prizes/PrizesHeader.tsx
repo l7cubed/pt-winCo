@@ -31,13 +31,6 @@ export const PrizesHeader = () => {
   return (
     <>
       <div className='flex flex-col items-center gap-3'>
-        <Image
-          src='/partyPopperEmoji.svg'
-          alt='Cabana Party Popper Emoji'
-          width={88}
-          height={88}
-          priority={true}
-        />
         <span
           className={classNames(
             'w-2/3 flex flex-wrap justify-center text-center text-[1.75rem] font-grotesk font-bold',

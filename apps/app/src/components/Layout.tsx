@@ -133,7 +133,7 @@ export const Layout = (props: LayoutProps) => {
   return (
     <div className='flex flex-col min-h-screen'>
       <Head>
-        <title>{`Cabana App${!!pageTitle ? ` | ${pageTitle}` : ''}`}</title>
+        <title>{`Nouns Win${!!pageTitle ? ` | ${pageTitle}` : ''}`}</title>
       </Head>
 
       <Navbar />

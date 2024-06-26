@@ -21,21 +21,17 @@ import { NETWORK, NOUNS_TOKEN_ADDRESSES, USDC_TOKEN_ADDRESSES } from '@shared/ut
 import defaultVaultList from '@vaultLists/default'
 import { Address, parseUnits } from 'viem'
 import {
-  arbitrum,
-  arbitrumSepolia,
   base,
   baseSepolia,
   mainnet,
-  optimism,
-  optimismSepolia
 } from 'viem/chains'
 
 /**
  * Supported networks
  */
 export const SUPPORTED_NETWORKS = {
-  mainnets: [NETWORK.mainnet, NETWORK.optimism, NETWORK.base, NETWORK.arbitrum],
-  testnets: [NETWORK.optimism_sepolia, NETWORK.arbitrum_sepolia, NETWORK.base_sepolia]
+  mainnets: [NETWORK.mainnet, NETWORK.base],
+  testnets: [NETWORK.base_sepolia]
 } as const
 
 /**
@@ -43,11 +39,7 @@ export const SUPPORTED_NETWORKS = {
  */
 export const WAGMI_CHAINS = {
   [NETWORK.mainnet]: mainnet,
-  [NETWORK.optimism]: optimism,
-  [NETWORK.arbitrum]: arbitrum,
   [NETWORK.base]: base,
-  [NETWORK.optimism_sepolia]: optimismSepolia,
-  [NETWORK.arbitrum_sepolia]: arbitrumSepolia,
   [NETWORK.base_sepolia]: baseSepolia
 } as const
 
@@ -141,7 +133,8 @@ export const TWAB_REWARDS_SETTINGS: {
       '0x4200000000000000000000000000000000000006', // WETH
       '0x50c5725949a6f0c72e6c4a641f24049a917db0cb', // DAI
       '0xd652C5425aea2Afd5fb142e120FeCf79e18fafc3', // POOL
-      '0xA88594D404727625A9437C3f886C7643872296AE' // WELL
+      '0xA88594D404727625A9437C3f886C7643872296AE', // WELL
+      '0x0a93a7BE7e7e426fC046e204C44d6b03A302b631' //NOUNS
     ],
     fromBlock: QUERY_START_BLOCK[NETWORK.base]
   },
