@@ -13,7 +13,7 @@ export const baseVaults: VaultList['tokens'] = [
       underlyingAsset: {
         address: '0x0a93a7BE7e7e426fC046e204C44d6b03A302b631',
         symbol: 'NOUNS',
-        name: 'Nouns Token'
+        name: 'NounsToken'
       }
     }
   }
