@@ -30,14 +30,14 @@ export type NETWORK_NAME = keyof typeof NETWORK
  * POOL token addresses
  */
 export const NOUNS_TOKEN_ADDRESSES = {
-  [NETWORK.mainnet]: '0x0cEC1A9154Ff802e7934Fc916Ed7Ca50bDE6844e',
-  [NETWORK.polygon]: '0x25788a1a171ec66Da6502f9975a15B609fF54CF6',
-  [NETWORK.optimism]: '0x395ae52bb17aef68c2888d941736a71dc6d4e125',
-  [NETWORK.arbitrum]: '0xCF934E2402A5e072928a39a956964eb8F2B5B79C',
+  [NETWORK.mainnet]: '0x5c1760c98be951A4067DF234695c8014D8e7619C',
+  [NETWORK.polygon]: '0x',
+  [NETWORK.optimism]: '0x',
+  [NETWORK.arbitrum]: '0x',
   [NETWORK.base]: '0x0a93a7BE7e7e426fC046e204C44d6b03A302b631',
-  [NETWORK.optimism_sepolia]: '0x24Ffb8Ca3DeA588B267A15F1d94766dCbA034aE6',
-  [NETWORK.arbitrum_sepolia]: '0x02A32F041C16158bcC1CaA90e22B230958eD5c4b',
-  [NETWORK.base_sepolia]: '0x50Ac98a0CA373a3935069A8755D895663d2F4A16'
+  [NETWORK.optimism_sepolia]: '0x',
+  [NETWORK.arbitrum_sepolia]: '0x',
+  [NETWORK.base_sepolia]: '0x'
 } as const satisfies { [chainId: number]: Address }
 
 /**
