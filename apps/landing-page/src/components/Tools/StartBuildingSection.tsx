@@ -17,25 +17,13 @@ export const StartBuildingSection = (props: StartBuildingSectionProps) => {
         <StartBuildingItem
           href={LINKS.vaultFactory}
           imgSrc='/factoryScreenshot.png'
-          title='Cabana Factory'
-          description='Launch your own prize vaults using the PoolTogether protocol alongside ERC-4626 compatible yield sources.'
-        />
-        <StartBuildingItem
-          href={LINKS.vaultListCreator}
-          imgSrc='/listsScreenshot.png'
-          title='Cabana Lists'
-          description='Create and host your own vault lists so users can view, interact with and share your prize vaults on the Cabana App.'
-        />
-        <StartBuildingItem
-          href={LINKS.analytics}
-          imgSrc='/cabanalyticsScreenshot.png'
-          title='Cabanalytics'
-          description='View analytics and health metrics for the PoolTogether Hyperstructure.'
+          title='Nouns Win Vault Factory'
+          description='Launch your own prize vaults compatible with any ERC-4626 compatible yield sources.'
         />
         <StartBuildingItem
           href={LINKS.rewardsBuilder}
           imgSrc='/rewardsScreenshot.png'
-          title='Cabana Rewards Builder'
+          title='Nouns Win Rewards Builder'
           description='Create and manage bonus rewards for any PoolTogether prize vault.'
         />
       </div>

@@ -1,5 +1,4 @@
 import classNames from 'classnames'
-import { DocsSection } from './DocsSection'
 import { StartBuildingSection } from './StartBuildingSection'
 
 interface ToolsContentProps {
@@ -17,7 +16,6 @@ export const ToolsContent = (props: ToolsContentProps) => {
       )}
     >
       <StartBuildingSection className='max-w-[1440px]' />
-      <DocsSection className='px-6' />
     </div>
   )
 }

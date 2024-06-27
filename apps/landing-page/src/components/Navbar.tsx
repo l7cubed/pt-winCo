@@ -23,7 +23,7 @@ export const Navbar = (props: NavbarProps) => {
           className
         )}
       >
-        <Link href='https://pooltogether.com'>
+        <Link href='https://nouns.win'>
           <Logo smLogoClassName='w-11' mdLogoClassName='w-52' />
         </Link>
         <Link href={LINKS.protocolLandingPage} target='_blank'>

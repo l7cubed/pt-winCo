@@ -16,7 +16,7 @@ class MyDocument extends Document {
   }
 
   render() {
-    const title = 'Cabana Rewards Builder'
+    const title = 'Nouns Win Rewards Builder'
     const description = 'Create and manage rewards for any PoolTogether prize vault.'
     const keywords =
       'pooltogether prize savings win save protocol blockchain vault 4626 ethereum optimism arbitrum tool rewards'

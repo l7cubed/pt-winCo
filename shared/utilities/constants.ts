@@ -674,20 +674,17 @@ export const TOKEN_DATA_REDIRECTS: {
  * Domains
  */
 export const DOMAINS = {
-  app: 'https://myevm.win',
-  app_v4: 'https://myevm.win',
+  app: 'https://app.nouns.win',
   landingPage: 'https://myevm.win',
-  protocolLandingPage: 'https://myevm.xyz',
-  docs: 'https://myevm.xyz',
+  protocolLandingPage: 'https://nouns.win',
+  docs: 'https://docs.cabana.fi/',
   protocolDocs: 'https://myevm.xyz',
   protocolDevDocs: 'https://myevm.xyz',
   governance: 'https://nouns.wtf',
   poolExplorer: 'https://myevm.win',
-  vaultListCreator: 'https://lists.cabana.fi',
-  vaultFactory: 'https://factory.cabana.fi',
-  analytics: 'https://analytics.cabana.fi',
-  rewardsBuilder: 'https://rewards.cabana.fi',
-  flashLiquidator: 'https://flash.cabana.fi',
+  vaultFactory: 'https://factory.nouns.win',
+  rewardsBuilder: 'https://rewards.nouns.win',
+  flashLiquidator: 'https://flash.nouns.win',
 } as const satisfies { [name: string]: `https://${string}` }
 
 /**
