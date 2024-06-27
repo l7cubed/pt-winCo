@@ -2,7 +2,6 @@ import { useScreenSize } from '@shared/generic-react-hooks'
 import { Button, Logo } from '@shared/ui'
 import { LINKS } from '@shared/utilities'
 import classNames from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ReactNode } from 'react'
@@ -18,16 +17,19 @@ export const Navbar = (props: NavbarProps) => {
     <>
       <div
         className={classNames(
-          'flex items-center justify-between px-6 py-3 z-30',
-          'md:px-24 md:py-12',
+          'flex items-center justify-between px-2 py-3 z-30',
+          'md:px-4 md:py-2',
           className
         )}
       >
-        <Link href='https://nouns.win'>
-          <Logo smLogoClassName='w-11' mdLogoClassName='w-52' />
+        <Link href='https://nouns.win' legacyBehavior>
+          <a>
+            <Logo smLogoClassName='w-11' mdLogoClassName='w-52' />
+          </a>
         </Link>
-        <Link href={LINKS.protocolLandingPage} target='_blank'>
-          <PoweredByPT />
+        <Link href={LINKS.protocolLandingPage} legacyBehavior>
+          <a target='_blank'>
+          </a>
         </Link>
         <div className='hidden gap-6 items-center md:flex'>
           <NavbarActions />
@@ -103,34 +105,23 @@ const NavbarLink = (props: NavbarLinkProps) => {
   const isActive = href === router.pathname
 
   return (
-    <Link
-      href={href}
-      target={href.startsWith('http') ? '_blank' : '_self'}
-      className={classNames(
-        'border-b-2',
-        {
-          'text-pt-purple-50 border-b-pt-teal-dark': isActive,
-          'text-pt-purple-200 border-b-transparent hover:text-pt-purple-50': !isActive
-        },
-        className
-      )}
-    >
-      {name}
+    <Link href={href} legacyBehavior>
+      <a
+        target={href.startsWith('http') ? '_blank' : '_self'}
+        className={classNames(
+          'border-b-2',
+          {
+            'text-pt-purple-50 border-b-pt-teal-dark': isActive,
+            'text-pt-purple-200 border-b-transparent hover:text-pt-purple-50': !isActive
+          },
+          className
+        )}
+      >
+        {name}
+      </a>
     </Link>
   )
 }
 
-const PoweredByPT = () => {
-  return (
-    <div className='flex flex-col items-center'>
-      <span className='text-xs text-pt-purple-300 whitespace-nowrap md:text-base'>Powered by</span>
-      <Image
-        src='/ptLogo.svg'
-        alt='PoolTogether'
-        width={183}
-        height={72}
-        className='w-24 h-auto md:w-32'
-      />
-    </div>
-  )
-}
+
+

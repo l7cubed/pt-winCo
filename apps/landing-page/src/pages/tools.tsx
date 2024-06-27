@@ -5,8 +5,8 @@ import { ToolsHeader } from '@components/Tools/ToolsHeader'
 export default function ToolsPage() {
   return (
     <Layout>
-      <ToolsHeader className='mt-10' />
-      <ToolsContent className='py-20 md:py-40' />
+      <ToolsContent className='py-2 md:py-4' />
+      <ToolsHeader className='mt-1' />
     </Layout>
   )
 }
