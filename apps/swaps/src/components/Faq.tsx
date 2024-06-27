@@ -53,7 +53,7 @@ export const Faq = (props: FaqProps) => {
           Swapping can be simpler and quicker since you can swap from any token you already hold in
           your wallet. However, if you are swapping in a large amount, the % slippage and fees from
           decentralized exchanges may make it less worthwhile! In that case, it might be better to
-          deposit through the <FaqLink href={LINKS.app}>Cabana App</FaqLink>.
+          deposit through the <FaqLink href={LINKS.app}>Nouns</FaqLink>.
         </span>
       )
     }

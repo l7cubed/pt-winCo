@@ -27,14 +27,6 @@ export const Footer = (props: FooterProps) => {
           </Link>
         </div>
       </div>
-      <div className='flex flex-col items-center text-center mx-auto mt-20 text-sm text-pt-purple-100'>
-        <Link href='/terms' className='hover:underline'>
-          Terms and Conditions
-        </Link>
-        <Link href='/privacy' className='hover:underline'>
-          Privacy Policy
-        </Link>
-      </div>
     </footer>
   )
 }
@@ -64,9 +56,9 @@ const FooterWave = () => {
 const MadeBy = () => {
   return (
     <div className='flex flex-col gap-3'>
-      <span className='text-center text-pt-purple-300 md:text-start'>Cabana made by</span>
-      <a href='https://g9software.xyz' target='_blank' className='opacity-50'>
-        <Image src='/generationLogo.svg' alt='Generation Software' width={261} height={38} />
+      <span className='text-center text-pt-purple-300 md:text-start'>Made by</span>
+      <a href='https://myevm.casa' target='_blank' className='opacity-100'>
+        <Image src='/myevmLogo.svg' alt='Generation Software' width={261} height={38} />
       </a>
     </div>
   )
@@ -91,11 +83,11 @@ const AuditsBy = () => {
 const SocialIcons = () => {
   return (
     <div className='flex gap-4 items-center order-last md:order-none'>
-      <SimpleSocialIcon platform='twitter' href={LINKS.twitter} />
-      <SimpleSocialIcon platform='discord' href={LINKS.discord} />
+      <SimpleSocialIcon platform='twitter' href='https://x.com/nounsdao' />
     </div>
-  )
-}
+  );
+};
+
 
 interface SimpleSocialIconProps extends SocialIconProps {
   href: string

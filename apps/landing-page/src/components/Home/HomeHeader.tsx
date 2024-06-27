@@ -19,10 +19,10 @@ export const HomeHeader = (props: HomeHeaderProps) => {
         <Image
           src='/partyEmoji.svg'
           alt='Cabana Party Emoji'
-          width={180}
-          height={180}
+          width={380}
+          height={380}
           priority={true}
-          className='w-auto h-24 z-10 md:h-44'
+          className='w-auto h-55 z-10 md:h-56'
         />
         <div className='flex flex-col items-center text-center mb-6 z-10 md:mt-6 md:mb-10'>
           <h2 className='text-3xl font-medium md:text-5xl'>Save to Win</h2>

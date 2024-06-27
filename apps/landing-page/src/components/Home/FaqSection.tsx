@@ -24,15 +24,13 @@ export const FaqSection = (props: FaqSectionProps) => {
       )
     },
     {
-      question: 'What is Cabana?',
+      question: 'What is Nouns.win?',
       answer: (
         <span>
-          Cabana offers a suite of open-source tools for interacting with PoolTogether V5.{' '}
-          <FaqLink href={LINKS.app}>app.cabana.fi</FaqLink> allows anyone to deposit and withdraw
-          from the protocol. <FaqLink href={LINKS.vaultFactory}>factory.cabana.fi</FaqLink> allows
+          Nouns.win offers no loss savings strategies allowing users to win NOUNS token by using PoolTogether V5's audited contracts.{' '}
+          <FaqLink href={LINKS.app}>app.nouns.win</FaqLink> allows anyone to deposit and withdraw
+          from the protocol. <FaqLink href={LINKS.vaultFactory}>factory.nouns.win</FaqLink> allows
           anyone to deploy their own prize vaults using ERC-4626 compatible yield sources.{' '}
-          <FaqLink href={LINKS.vaultListCreator}>lists.cabana.fi</FaqLink> makes it easy for anyone
-          to curate their own prize vault lists that can be shared and accessed via the main app.
         </span>
       )
     }

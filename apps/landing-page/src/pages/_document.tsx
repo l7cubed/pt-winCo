@@ -16,7 +16,7 @@ class MyDocument extends Document {
   }
 
   render() {
-    const title = 'Cabana'
+    const title = 'WinNouns'
     const description =
       'Welcome to Cabana, a suite of open source interfaces and tools for the PoolTogether Hyperstructure.'
     const keywords = 'pooltogether prize savings win save protocol blockchain tools'
@@ -27,10 +27,10 @@ class MyDocument extends Document {
           <link rel='icon' href='/favicon.png' type='image/x-icon' />
           <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 
-          <meta name='theme-color' content='#6538C1' />
+          <meta name='theme-color' content='#2BA36F' />
           <meta name='description' content={description} />
           <meta name='keywords' content={keywords} />
-          <meta name='author' content='Generation Software' />
+          <meta name='author' content='MyEVM' />
 
           <meta property='og:title' content={title} />
           <meta property='og:description' content={description} />

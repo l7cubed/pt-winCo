@@ -10,7 +10,7 @@ import {
  * Token Logo URLs
  */
 const tokenLogoUrls = {
-  eth: `${LINKS.app}/icons/ether.svg`,
+  eth: `https://i.imgur.com/JakCDoK.png`,
   pool: 'https://assets.coingecko.com/coins/images/14003/standard/PoolTogether.png?1696513732',
   usdc: 'https://assets.coingecko.com/coins/images/6319/standard/usdc.png?1696506694',
   dai: 'https://assets.coingecko.com/coins/images/9956/standard/Badge_Dai.png?1696509996',
