@@ -65,7 +65,7 @@ export const CurrencyValue = (props: CurrencyValueProps) => {
       if (!!nounsPrice) {
         rates.nouns = {
           name: SUPPORTED_CURRENCIES.nouns.name,
-          unit: SUPPORTED_CURRENCIES.nouns.symbol,
+          unit: SUPPORTED_CURRENCIES.nouns.symbol, // Updated to use 'unit'
           value: rates.eth.value / nounsPrice,
           type: 'crypto'
         }

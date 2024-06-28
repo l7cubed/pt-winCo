@@ -49,6 +49,7 @@ export type CURRENCY_ID =
   | 'vef'
   | 'vnd'
   | 'zar'
+  | 'nouns' // Add 'nouns' to the list
 
 /**
  * Supported currencies' data
@@ -100,5 +101,6 @@ export const SUPPORTED_CURRENCIES: Record<CURRENCY_ID, { name: string; symbol: s
   usd: { name: 'US Dollar', symbol: '$' },
   vef: { name: 'Venezuelan bolívar fuerte', symbol: 'Bs.F' },
   vnd: { name: 'Vietnamese đồng', symbol: '₫' },
-  zar: { name: 'South African Rand', symbol: 'R' }
+  zar: { name: 'South African Rand', symbol: 'R' },
+  nouns: { name: 'Nouns Token', symbol: 'NOUNS' } // Add Nouns token
 }
