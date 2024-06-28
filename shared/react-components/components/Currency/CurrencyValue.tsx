@@ -56,17 +56,17 @@ export const CurrencyValue = (props: CurrencyValueProps) => {
 
     if (!!rates.eth && !!extraTokenPrices) {
       const usdcPrice = extraTokenPrices[USDC_TOKEN_ADDRESSES[NETWORK.mainnet]]
-      const poolPrice = extraTokenPrices[lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])]
+      const nounsPrice = extraTokenPrices[lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])]
 
       if (!!rates.usd && !!usdcPrice) {
         rates.usd.value = rates.eth.value / usdcPrice
       }
 
-      if (!!poolPrice) {
-        rates.pool = {
-          name: SUPPORTED_CURRENCIES.pool.name,
-          unit: SUPPORTED_CURRENCIES.pool.symbol,
-          value: rates.eth.value / poolPrice,
+      if (!!nounsPrice) {
+        rates.nouns = {
+          name: SUPPORTED_CURRENCIES.nouns.name,
+          unit: SUPPORTED_CURRENCIES.nouns.symbol,
+          value: rates.eth.value / nounsPrice,
           type: 'crypto'
         }
       }
@@ -135,14 +135,14 @@ export const CurrencyValue = (props: CurrencyValueProps) => {
     const fractionDigits = decimals ?? currencyValue > 10_000 ? 0 : 2
     return (
       <>
-        {!hideCountUpSymbol && symbol !== 'POOL' && symbol}
+        {!hideCountUpSymbol && symbol !== 'NOUNS' && symbol}
         <CountUp
           countTo={currencyValue}
           minimumFractionDigits={fractionDigits}
           maximumFractionDigits={fractionDigits}
           {...rest}
         />
-        {!hideCountUpSymbol && symbol === 'POOL' && ` ${symbol}`}
+        {!hideCountUpSymbol && symbol === 'NOUNS' && ` ${symbol}`}
       </>
     )
   } else {
