@@ -33,7 +33,7 @@ export default function MyApp(props: AppProps & CustomAppProps) {
         <RainbowKitProvider
           theme={ptRainbowTheme()}
           showRecentTransactions={true}
-          appInfo={{ appName: 'Cabana' }}
+          appInfo={{ appName: 'Nouns.win' }}
         >
           <AppContainer {...props} />
         </RainbowKitProvider>

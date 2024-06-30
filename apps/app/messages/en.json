@@ -246,17 +246,17 @@
   },
   "Footer": {
     "titles": {
-      "getHelp": "Get Help",
-      "ecosystem": "Ecosystem",
-      "community": "Community",
+      "getHelp": "About Pool Together",
+      "ecosystem": "About Nouns DAO",
+      "community": "About MyEVM",
       "settings": "Settings"
     },
     "userDocs": "User Docs",
+    "security": "Security",
     "faq": "FAQ",
     "devDocs": "Developer Docs",
     "extensions": "Extensions",
     "governance": "Governance",
-    "security": "Security",
     "enableTestnets": "Enable Testnets",
     "disableTestnets": "Disable Testnets",
     "termsAndConditions": "Terms and Conditions",

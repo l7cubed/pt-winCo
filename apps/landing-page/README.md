@@ -6,7 +6,7 @@
 
 <br />
 
-# 💻 &nbsp; Cabana Landing Page
+
 
 ![next](https://img.shields.io/static/v1?label&logo=nextdotjs&logoColor=white&message=Next.js&color=black)
 ![ts](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
@@ -15,7 +15,7 @@
 
 # 🏆 &nbsp; Overview
 
-Cabana's landing page, giving users some info as to what this suite of PoolTogether tools encompasses, what it does not, etc.
+
 
 ## 🏎️ &nbsp; Quickstart
 

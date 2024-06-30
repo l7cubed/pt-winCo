@@ -16,7 +16,7 @@ class MyDocument extends Document {
   }
 
   render() {
-    const title = 'Cabanalytics'
+    const title = 'Analytics'
     const description = 'View analytics and health metrics for the PoolTogether Hyperstructure.'
     const keywords =
       'pooltogether prize savings win save protocol blockchain vault ethereum stats analytics draws liquidations bots'

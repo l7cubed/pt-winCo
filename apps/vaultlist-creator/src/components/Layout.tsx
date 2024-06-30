@@ -19,7 +19,7 @@ export const Layout = (props: LayoutProps) => {
   return (
     <div className='flex flex-col min-h-screen overflow-x-hidden'>
       <Head>
-        <title>Cabana Lists</title>
+        <title>Lists</title>
       </Head>
 
       <SimpleNavbar />
@@ -67,26 +67,10 @@ const SimpleNavbar = (props: { className?: string }) => {
 
 const SimpleFooter = (props: { className?: string }) => {
   return (
-    <footer
-      className={classNames(
-        'h-28 flex items-center justify-center mt-auto px-2 z-20 lg:px-12',
-        props.className
-      )}
-    >
-      <div className='flex flex-col gap-2 items-center text-center'>
-        <span className='text-sm font-medium'>
-          Made with ❤️ & 🤖 by{' '}
-          <a href='https://g9software.xyz' target='_blank' className='hover:text-pt-teal'>
-            Generation Software
-          </a>
-        </span>
-        <span className='text-xs font-medium text-pt-pink'>
-          By using this app you are agreeing to our{' '}
-          <Link href={LINKS.termsOfService} target='_blank' className='hover:underline'>
-            Terms and Conditions
-          </Link>
-        </span>
-      </div>
+    <footer className={props.className}>
+      <p className='text-center text-sm text-gray-500'>
+        &copy; {new Date().getFullYear()} 
+      </p>
     </footer>
   )
 }

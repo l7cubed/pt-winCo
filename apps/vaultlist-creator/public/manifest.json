@@ -1,10 +1,10 @@
 {
-  "short_name": "Cabana Lists",
-  "name": "Cabana Vault List Creator App",
+  "short_name": "Lists",
+  "name": "List Creator App",
   "description": "Create your very own PoolTogether vaultlists.",
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#8050E3",
+  "theme_color": "#2BA36F",
   "background_color": "#21064E",
   "display": "fullscreen",
   "icons": [

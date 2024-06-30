@@ -33,7 +33,7 @@ export const Navbar = (props: NavbarProps) => {
         <Link href={`/${networkName}`} className='flex gap-1 items-center'>
           <Image src='/cabanaLogo.svg' alt='Cabana' width={32} height={32} priority={true} />
           <span className='-mt-[.2rem] font-grotesk font-bold text-[2rem] text-pt-purple-100'>
-            Cabanalytics
+            Analytics
           </span>
         </Link>
         <div className='hidden gap-6 items-center md:flex'>

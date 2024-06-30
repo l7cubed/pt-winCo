@@ -1,6 +1,6 @@
 {
-  "short_name": "Cabana Flash Liquidator",
-  "name": "Cabana Flash Liquidator App",
+  "short_name": "Flash Liquidator",
+  "name": "Flash Liquidator App",
   "description": "Flash liquidate yield from any PoolTogether prize vault.",
   "start_url": "/",
   "scope": "/",

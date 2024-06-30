@@ -679,12 +679,13 @@ export const DOMAINS = {
   protocolLandingPage: 'https://nouns.win',
   docs: 'https://docs.cabana.fi/',
   protocolDocs: 'https://myevm.xyz',
-  protocolDevDocs: 'https://myevm.xyz',
+  protocolDevDocs: 'https://dev.pooltogether.com/',
   governance: 'https://nouns.wtf',
   poolExplorer: 'https://myevm.win',
   vaultFactory: 'https://factory.nouns.win',
   rewardsBuilder: 'https://rewards.nouns.win',
   flashLiquidator: 'https://flash.nouns.win',
+  vaultListCreator: 'https://lists.nouns.win',
 } as const satisfies { [name: string]: `https://${string}` }
 
 /**
@@ -715,7 +716,7 @@ export const LINKS = {
   risks: `${DOMAINS.protocolDocs}/security/risks`,
   audits: `${DOMAINS.protocolDocs}/security/audits`,
   devDocs_v4: `${DOMAINS.protocolDevDocs}/protocol/V4/introduction`,
-  twitter: `https://twitter.com/nounsdao`,
+  twitter: `https://twitter.com/myevmcasa`,
   github: `https://github.com/myevm`,
   treasury: `https://nouns.wtf`,
   grants: `https://rounds.wtf`,

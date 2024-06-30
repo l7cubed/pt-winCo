@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo run build --include-dependencies",
+    "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
@@ -14,6 +14,7 @@
     "@heroicons/react": "^2.0.16",
     "@tanstack/react-query": "^5.20.5",
     "@trivago/prettier-plugin-sort-imports": "^4.1.0",
+    "@turbo/codemod": "^2.0.6",
     "@types/node": "^17.0.45",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
@@ -35,7 +36,8 @@
     "turbo": "1.13.4",
     "typescript": "^5.0.4",
     "viem": "2.13.2",
-    "wagmi": "2.9.8"
+    "wagmi": "2.9.8",
+    "wrangler": "^3.62.0"
   },
   "packageManager": "pnpm@8.12.1"
 }

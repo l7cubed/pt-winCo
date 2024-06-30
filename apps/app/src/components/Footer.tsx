@@ -38,7 +38,8 @@ export const Footer = () => {
       title: t_footer('titles.getHelp'),
       content: [
         { content: t_footer('userDocs'), href: LINKS.docs },
-        { content: t_footer('devDocs'), href: LINKS.protocolDevDocs }
+        { content: t_footer('devDocs'), href: LINKS.protocolDevDocs },
+        { content: t_footer('security'), href: LINKS.audits }
       ]
     },
     {
@@ -46,7 +47,6 @@ export const Footer = () => {
       content: [
         { content: t_footer('extensions'), href: LINKS.ecosystem },
         { content: t_footer('governance'), href: LINKS.governance },
-        { content: t_footer('security'), href: LINKS.audits }
       ]
     },
     {
@@ -56,11 +56,6 @@ export const Footer = () => {
           content: 'Twitter',
           href: LINKS.twitter,
           icon: <SocialIcon platform='twitter' className='w-6 h-auto shrink-0' />
-        },
-        {
-          content: 'Discord',
-          onClick: () => setIsCaptchaModalOpen(true),
-          icon: <SocialIcon platform='discord' className='w-6 h-auto shrink-0' />
         },
         {
           content: 'GitHub',
