@@ -51,7 +51,6 @@
     "withdrawAnyTime": "Deposit in any ERC4626 Yield Strategy to Save and Win"
   },
   "Prizes": {
-    "currentPrizes": "Current Prizes, First Draw 8/8/24",
     "learnMore": "Prizes and frequencies are estimations. <link>Learn how PoolTogether works</link>",
     "prize": "Prize",
     "frequency": "Frequency",

@@ -20,9 +20,6 @@ export const PrizePoolDisplay = (props: PrizePoolDisplayProps) => {
 
   return (
     <div className={classNames('flex flex-col items-center text-center', className)}>
-      <span className='text-4xl font-grotesk text-custom-blue font-medium mb-2 lg:text-4xl'>
-       {t('currentPrizes')}
-      </span>
       <PrizePoolCarousel className='-mt-1 mb-4' />
       <span>
         *
