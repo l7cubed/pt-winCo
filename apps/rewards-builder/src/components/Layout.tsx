@@ -1,12 +1,10 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { Toaster } from '@shared/ui'
-import { LINKS } from '@shared/utilities'
 import classNames from 'classnames'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode } from 'react'
-import { PoweredByPT } from './PoweredByPT'
 
 interface LayoutProps {
   children: ReactNode
@@ -20,7 +18,7 @@ export const Layout = (props: LayoutProps) => {
   return (
     <div className='flex flex-col min-h-screen overflow-x-hidden'>
       <Head>
-        <title>Nouns Win Rewards Builder</title>
+        <title>Rewards Builder</title>
       </Head>
 
       <SimpleNavbar />
@@ -99,15 +97,6 @@ const SimpleFooter = (props: SimpleFooterProps) => {
           'lg:absolute lg:right-8': !isSidebarActive
         })}
       >
-        <PoweredByPT className='mx-auto' />
-      </div>
-      <div className='flex flex-col gap-2 items-center mx-auto'>
-        <span className='text-xs font-medium text-pt-pink'>
-          By using this app you are agreeing to our{' '}
-          <Link href={LINKS.termsOfService} target='_blank' className='hover:underline'>
-            Terms and Conditions
-          </Link>
-        </span>
       </div>
     </footer>
   )

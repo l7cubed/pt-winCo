@@ -22,7 +22,6 @@ import defaultVaultList from '@vaultLists/default'
 import { Address, parseUnits } from 'viem'
 import {
   base,
-  baseSepolia,
   mainnet,
 } from 'viem/chains'
 
@@ -30,8 +29,7 @@ import {
  * Supported networks
  */
 export const SUPPORTED_NETWORKS = {
-  mainnets: [NETWORK.mainnet, NETWORK.base],
-  testnets: [NETWORK.base_sepolia]
+  mainnets: [NETWORK.mainnet, NETWORK.base]
 } as const
 
 /**
@@ -39,8 +37,7 @@ export const SUPPORTED_NETWORKS = {
  */
 export const WAGMI_CHAINS = {
   [NETWORK.mainnet]: mainnet,
-  [NETWORK.base]: base,
-  [NETWORK.base_sepolia]: baseSepolia
+  [NETWORK.base]: base
 } as const
 
 /**
@@ -71,7 +68,6 @@ export const WALLETS: { [wallet: string]: CreateWalletFn } = {
 export const RPC_URLS = {
   [NETWORK.mainnet]: process.env.NEXT_PUBLIC_MAINNET_RPC_URL,
   [NETWORK.base]: process.env.NEXT_PUBLIC_BASE_RPC_URL,
-  [NETWORK.base_sepolia]: process.env.NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL
 } as const
 
 /**
@@ -86,8 +82,7 @@ export const DEFAULT_VAULT_LISTS = {
  */
 export const QUERY_START_BLOCK = {
   [NETWORK.mainnet]: 1n,
-  [NETWORK.base]: 14_506_800n,
-  [NETWORK.base_sepolia]: 10_578_500n
+  [NETWORK.base]: 14_506_800n
 } as const satisfies { [chainId: number]: bigint }
 
 /**
@@ -107,13 +102,6 @@ export const TWAB_REWARDS_SETTINGS: {
     ],
     fromBlock: QUERY_START_BLOCK[NETWORK.base]
   },
-  [NETWORK.base_sepolia]: {
-    tokenAddresses: [
-      USDC_TOKEN_ADDRESSES[NETWORK.base_sepolia],
-      NOUNS_TOKEN_ADDRESSES[NETWORK.base_sepolia]
-    ],
-    fromBlock: QUERY_START_BLOCK[NETWORK.base_sepolia]
-  }
 }
 
 /**

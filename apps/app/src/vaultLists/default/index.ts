@@ -1,6 +1,6 @@
 import { VaultList } from '@shared/types'
 import { baseVaults } from './base'
-import { baseSepoliaVaults } from './baseSepolia'
+
 
 
 const defaultVaultList: VaultList = {
@@ -11,7 +11,6 @@ const defaultVaultList: VaultList = {
   logoURI: 'https://i.imgur.com/InzJwXV.png', // Updated logo URI
   tokens: [
     ...baseVaults,
-    ...baseSepoliaVaults
   ]
 }
 

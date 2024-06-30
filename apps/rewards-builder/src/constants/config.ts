@@ -20,13 +20,8 @@ import {
 import { NETWORK } from '@shared/utilities'
 import { Address } from 'viem'
 import {
-  arbitrum,
-  arbitrumSepolia,
   base,
-  baseSepolia,
   mainnet,
-  optimism,
-  optimismSepolia
 } from 'viem/chains'
 
 /**
@@ -34,7 +29,6 @@ import {
  */
 export const SUPPORTED_NETWORKS = [
   NETWORK.base,
-  NETWORK.base_sepolia
 ] as const
 
 /**
@@ -42,12 +36,7 @@ export const SUPPORTED_NETWORKS = [
  */
 export const WAGMI_CHAINS = {
   [NETWORK.mainnet]: mainnet,
-  [NETWORK.optimism]: optimism,
-  [NETWORK.arbitrum]: arbitrum,
   [NETWORK.base]: base,
-  [NETWORK.optimism_sepolia]: optimismSepolia,
-  [NETWORK.arbitrum_sepolia]: arbitrumSepolia,
-  [NETWORK.base_sepolia]: baseSepolia
 } as const
 
 /**
@@ -77,12 +66,7 @@ export const WALLETS: { [wallet: string]: CreateWalletFn } = {
  */
 export const RPC_URLS = {
   [NETWORK.mainnet]: process.env.NEXT_PUBLIC_MAINNET_RPC_URL,
-  [NETWORK.optimism]: process.env.NEXT_PUBLIC_OPTIMISM_RPC_URL,
-  [NETWORK.arbitrum]: process.env.NEXT_PUBLIC_ARBITRUM_RPC_URL,
   [NETWORK.base]: process.env.NEXT_PUBLIC_BASE_RPC_URL,
-  [NETWORK.optimism_sepolia]: process.env.NEXT_PUBLIC_OPTIMISM_SEPOLIA_RPC_URL,
-  [NETWORK.arbitrum_sepolia]: process.env.NEXT_PUBLIC_ARBITRUM_SEPOLIA_RPC_URL,
-  [NETWORK.base_sepolia]: process.env.NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL
 } as const
 
 /**
@@ -93,5 +77,4 @@ export const PROMOTION_FILTERS: {
 } = {
   [NETWORK.mainnet]: {},
   [NETWORK.base]: { fromBlock: 14_506_800n },
-  [NETWORK.base_sepolia]: { fromBlock: 10_578_500n }
 }

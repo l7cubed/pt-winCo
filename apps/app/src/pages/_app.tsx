@@ -15,7 +15,7 @@ import { createCustomWagmiConfig } from '../utils'
 // React Query Client:
 const queryClient = new QueryClient()
 
-const networks = [...SUPPORTED_NETWORKS.mainnets, ...SUPPORTED_NETWORKS.testnets]
+const networks = [...SUPPORTED_NETWORKS.mainnets]
 const wagmiConfig = createCustomWagmiConfig(networks, { useCustomRPCs: true })
 
 export interface CustomAppProps {

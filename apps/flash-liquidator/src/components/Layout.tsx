@@ -1,13 +1,11 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { useScreenSize } from '@shared/generic-react-hooks'
 import { Toaster } from '@shared/ui'
-import { LINKS } from '@shared/utilities'
 import classNames from 'classnames'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode } from 'react'
-import { PoweredByPT } from './PoweredByPT'
 
 interface LayoutProps {
   children: ReactNode
@@ -91,21 +89,6 @@ const SimpleFooter = (props: SimpleFooterProps) => {
       )}
     >
       <div className='lg:absolute lg:right-8'>
-        <PoweredByPT className='mx-auto' />
-      </div>
-      <div className='flex flex-col gap-2 items-center mx-auto'>
-        <span className='inline-block text-center text-sm font-medium'>
-          Made with ❤️ & 🤖 by{' '}
-          <a href='https://g9software.xyz' target='_blank' className='hover:text-pt-teal'>
-            Generation Software
-          </a>
-        </span>
-        <span className='text-xs font-medium text-pt-pink'>
-          By using this app you are agreeing to our{' '}
-          <Link href={LINKS.termsOfService} target='_blank' className='hover:underline'>
-            Terms and Conditions
-          </Link>
-        </span>
       </div>
     </footer>
   )

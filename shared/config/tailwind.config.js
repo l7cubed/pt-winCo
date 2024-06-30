@@ -57,7 +57,13 @@ module.exports = {
           },
           gold: '#FFB636',
           transparent: '#F5F0FF1A'
-        }
+        },
+        // Add custom blue color
+        'custom-blue': '#1157FF',
+      },
+      spacing: {
+        // Add custom negative margin
+        '-22': '-5.5rem',
       },
       keyframes: {
         flip: {

@@ -48,12 +48,10 @@
     "account": "Account"
   },
   "Home": {
-    "winUpTo": "Deposit <token></token> to win up to <amount></amount>",
-    "withdrawAnyTime": "You can withdraw your full deposit at any time"
+    "withdrawAnyTime": "Deposit in any ERC4626 Yield Strategy to Save and Win"
   },
   "Prizes": {
-    "winUpTo": "Keep your deposit. Win up to <amount></amount>",
-    "currentPrizes": "Current Prizes",
+    "currentPrizes": "Current Prizes, First Draw 8/8/24",
     "learnMore": "Prizes and frequencies are estimations. <link>Learn how PoolTogether works</link>",
     "prize": "Prize",
     "frequency": "Frequency",

@@ -35,20 +35,7 @@ export const HomeHeader = () => {
 
   return (
     <>
-      <div className='flex flex-col items-center gap-3'>
-        <span
-          className={classNames(
-            'w-2/3 flex flex-wrap justify-center text-center text-[1.75rem] font-grotesk font-bold',
-            'md:w-full md:text-4xl lg:text-5xl'
-          )}
-        >
-          {t.rich('winUpTo', {
-            token: () => <TokenFlipper className='my-auto mx-3' />,
-            amount: () => <TotalPrizeValue />
-          })}
-        </span>
-        <span className='text-center text-pt-purple-100'>{t('withdrawAnyTime')}</span>
-      </div>
+      
     </>
   )
 }

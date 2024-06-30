@@ -1,6 +1,5 @@
 import { useGrandPrize, usePrizePool } from '@generationsoftware/hyperstructure-react-hooks'
-import { TokenAmount, TokenValue } from '@shared/react-components'
-import { Card, Spinner } from '@shared/ui'
+import { Card } from '@shared/ui'
 import { getNiceNetworkNameByChainId } from '@shared/utilities'
 import classNames from 'classnames'
 import { useFormContext, useWatch } from 'react-hook-form'
@@ -69,18 +68,6 @@ const NetworkCard = (props: NetworkCardProps) => {
     >
       <span className='text-lg font-bold text-pt-purple-100'>
         {getNiceNetworkNameByChainId(chainId)}
-      </span>
-      <span className='text-blue-500'>
-        Grand Prize:{' '}
-        {!!grandPrize ? (
-          <TokenValue
-            token={grandPrize}
-            fallback={<TokenAmount token={grandPrize} hideZeroes={true} />}
-            hideZeroes={true}
-          />
-        ) : (
-          <Spinner />
-        )}
       </span>
       <span className='hidden line-clamp-3 lg:block'>{NETWORK_CONFIG[chainId].description}</span>
     </Card>

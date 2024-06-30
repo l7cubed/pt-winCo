@@ -102,14 +102,6 @@ const SimpleFooter = (props: SimpleFooterProps) => {
         })}
       >
       </div>
-      <div className='flex flex-col gap-2 items-center mx-auto'>
-        <span className='text-xs font-medium text-pt-pink'>
-          By using this app you are agreeing to our{' '}
-          <Link href={LINKS.termsOfService} target='_blank' className='hover:underline'>
-            Terms and Conditions
-          </Link>
-        </span>
-      </div>
     </footer>
   )
 }

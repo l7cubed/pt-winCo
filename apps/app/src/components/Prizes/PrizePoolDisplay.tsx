@@ -20,10 +20,10 @@ export const PrizePoolDisplay = (props: PrizePoolDisplayProps) => {
 
   return (
     <div className={classNames('flex flex-col items-center text-center', className)}>
-      <span className='text-2xl font-grotesk text-pt-teal-dark font-medium md:text-4xl'>
-        {t('currentPrizes')}
+      <span className='text-4xl font-grotesk text-custom-blue font-medium mb-2 lg:text-4xl'>
+       {t('currentPrizes')}
       </span>
-      <PrizePoolCarousel className='mt-8 mb-4' />
+      <PrizePoolCarousel className='-mt-1 mb-4' />
       <span>
         *
         {t.rich('learnMore', {
@@ -91,38 +91,14 @@ const PrizePoolCarousel = (props: PrizePoolCarouselProps) => {
   return (
     <div
       className={classNames(
-        'relative w-screen flex justify-center gap-8 overflow-hidden',
+        'relative w-screen flex justify-center gap-1 overflow-hidden',
         className
       )}
     >
       <PrizePoolPrizesCard
-        prizePool={prizePoolsArray[prevPrizePoolIndex]}
-        className='hidden w-[calc(100vw-4rem)] shrink-0 lg:w-[38rem] lg:flex'
-      />
-      <PrizePoolPrizesCard
         prizePool={prizePoolsArray[prizePoolIndex]}
-        className='w-[calc(100vw-4rem)] shrink-0 lg:w-[38rem]'
+        className='w-[calc(50vw-4rem)] shrink-0 lg:w-[48rem]'
       />
-      <PrizePoolPrizesCard
-        prizePool={prizePoolsArray[nextPrizePoolIndex]}
-        className='hidden w-[calc(100vw-4rem)] shrink-0 lg:w-[38rem] lg:flex'
-      />
-      <div className='absolute w-full h-full pointer-events-none lg:bg-[linear-gradient(90deg,#2BA36F_15%,transparent_35%,transparent_65%,#2BA36F_85%)]'>
-        <div className='relative w-full h-full max-w-screen-xl mx-auto'>
-          <button
-            onClick={() => setPrizePoolIndex(prevPrizePoolIndex)}
-            className='absolute top-[calc(50%-0.75rem)] left-4 p-1 bg-pt-purple-600 rounded-full pointer-events-auto lg:top-[calc(50%-1rem)] lg:bg-pt-transparent'
-          >
-            <ArrowLongLeftIcon className='w-6 text-pt-purple-200 stroke-2 lg:w-8' />
-          </button>
-          <button
-            onClick={() => setPrizePoolIndex(nextPrizePoolIndex)}
-            className='absolute top-[calc(50%-0.75rem)] right-4 p-1 bg-pt-purple-600 rounded-full pointer-events-auto lg:top-[calc(50%-1rem)] lg:bg-pt-transparent'
-          >
-            <ArrowLongRightIcon className='w-6 text-pt-purple-200 stroke-2 lg:w-8' />
-          </button>
-        </div>
-      </div>
     </div>
   )
 }

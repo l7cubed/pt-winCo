@@ -37,7 +37,7 @@ export const PrizesHeader = () => {
             'md:w-full md:text-4xl lg:text-5xl'
           )}
         >
-          {t.rich('winUpTo', { amount: () => <TotalPrizeValue /> })}
+ 
         </span>
         {/* TODO: add animated text with recent big winners (need luck script/calc) */}
       </div>

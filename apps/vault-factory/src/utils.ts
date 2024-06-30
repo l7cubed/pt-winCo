@@ -11,7 +11,7 @@ import { RPC_URLS, SUPPORTED_NETWORKS, WAGMI_CHAINS, WALLETS } from '@constants/
 export const createCustomWagmiConfig = () => {
   const networks = Object.values(WAGMI_CHAINS).filter(
     (chain) =>
-      chain.id === NETWORK.mainnet ||
+      chain.id === NETWORK.base ||
       (SUPPORTED_NETWORKS.includes(chain.id as number) && !!RPC_URLS[chain.id])
   ) as any as [Chain, ...Chain[]]
 
