@@ -1,6 +1,6 @@
 {
-  "short_name": "Cabanalytics",
-  "name": "Cabanalytics",
+  "short_name": "Winanalytics",
+  "name": "Winanalytics",
   "description": "View analytics and health metrics for the PoolTogether Hyperstructure.",
   "start_url": "/",
   "scope": "/",

@@ -5,7 +5,7 @@ import { SUPPORTED_NETWORKS } from '@constants/config'
 export const useValidNetworks = () => {
   return useMemo(() => {
     const networks = new Set<NETWORK>()
-    const allSupportedNetworks = [...SUPPORTED_NETWORKS.mainnets, ...SUPPORTED_NETWORKS.testnets]
+    const allSupportedNetworks = [...SUPPORTED_NETWORKS.mainnets]
 
     allSupportedNetworks.forEach((network) => {
       const prizePool = PRIZE_POOLS.find((prizePool) => prizePool.chainId === network)

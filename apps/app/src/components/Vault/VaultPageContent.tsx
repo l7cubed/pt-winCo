@@ -232,10 +232,6 @@ const ErrorState = (props: ErrorStateProps) => {
       <ErrorPooly className='w-full max-w-[50%]' />
       {isInvalidNetwork ? (
         <div className='flex flex-col gap-2'>
-          <span>{t_error('vaultInvalidNetwork')}</span>
-          {!!chainId && SUPPORTED_NETWORKS.testnets.includes(chainId) && (
-            <span>{t_error('vaultEnableTestnets')}</span>
-          )}
           {!!chainId && SUPPORTED_NETWORKS.mainnets.includes(chainId) && (
             <span>{t_error('vaultDisableTestnets')}</span>
           )}

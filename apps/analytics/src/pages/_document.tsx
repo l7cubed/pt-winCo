@@ -35,12 +35,8 @@ class MyDocument extends Document {
           <meta property='og:title' content={title} />
           <meta property='og:description' content={description} />
           <meta property='og:site_name' content={title} />
-          <meta property='og:url' content={DOMAINS.analytics} />
           <meta property='og:type' content='website' />
-          <meta
-            property='og:image'
-            content={`${DOMAINS.analytics}/facebook-share-image-1200-630.png`}
-          />
+
           <meta property='og:rich_attachment' content='true' />
           <meta property='og:image:width' content='1200' />
           <meta property='og:image:height' content='630' />
@@ -49,11 +45,8 @@ class MyDocument extends Document {
           <meta property='twitter:description' content={description} />
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:site' content={'@g9software'} />
-          <meta
-            property='twitter:image:src'
-            content={`${DOMAINS.analytics}/twitter-share-image-1200-675.png`}
-          />
-          <meta property='twitter:url' content={DOMAINS.analytics} />
+ 
+
           <meta property='twitter:creator' content={'@g9software'} />
 
           <link rel='manifest' href='/manifest.json' />
