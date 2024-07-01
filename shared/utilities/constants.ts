@@ -31,13 +31,7 @@ export type NETWORK_NAME = keyof typeof NETWORK
  */
 export const NOUNS_TOKEN_ADDRESSES = {
   [NETWORK.mainnet]: '0x5c1760c98be951A4067DF234695c8014D8e7619C',
-  [NETWORK.polygon]: '0x',
-  [NETWORK.optimism]: '0x',
-  [NETWORK.arbitrum]: '0x',
-  [NETWORK.base]: '0x0a93a7BE7e7e426fC046e204C44d6b03A302b631',
-  [NETWORK.optimism_sepolia]: '0x',
-  [NETWORK.arbitrum_sepolia]: '0x',
-  [NETWORK.base_sepolia]: '0x'
+  [NETWORK.base]: '0x0a93a7BE7e7e426fC046e204C44d6b03A302b631'
 } as const satisfies { [chainId: number]: Address }
 
 /**
@@ -473,11 +467,6 @@ export const TOKEN_PRICE_REDIRECTS: {
   }
 } = {
   [NETWORK.optimism]: {
-    /* POOL */
-    [NOUNS_TOKEN_ADDRESSES[NETWORK.optimism].toLowerCase()]: {
-      chainId: NETWORK.mainnet,
-      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
-    },
     /* USDA */
     '0x0000206329b97db379d5e1bf586bbdb969c63274': {
       chainId: NETWORK.mainnet,
@@ -485,23 +474,6 @@ export const TOKEN_PRICE_REDIRECTS: {
     },
     /* EURA */
     '0x9485aca5bbbe1667ad97c7fe7c4531a624c8b1ed': {
-      chainId: NETWORK.mainnet,
-      address: '0x1a7e4e63778b4f12a199c062f3efdd288afcbce8'
-    }
-  },
-  [NETWORK.arbitrum]: {
-    /* POOL */
-    [NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum].toLowerCase()]: {
-      chainId: NETWORK.mainnet,
-      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
-    },
-    /* USDA */
-    '0x0000206329b97db379d5e1bf586bbdb969c63274': {
-      chainId: NETWORK.mainnet,
-      address: '0x0000206329b97db379d5e1bf586bbdb969c63274'
-    },
-    /* EURA */
-    '0xfa5ed56a203466cbbc2430a43c66b9d8723528e7': {
       chainId: NETWORK.mainnet,
       address: '0x1a7e4e63778b4f12a199c062f3efdd288afcbce8'
     }
@@ -543,97 +515,6 @@ export const TOKEN_PRICE_REDIRECTS: {
     '0xe0b52e49357fd4daf2c15e02058dce6bc0057db4': {
       chainId: NETWORK.mainnet,
       address: '0x1a7e4e63778b4f12a199c062f3efdd288afcbce8'
-    }
-  },
-  [NETWORK.optimism_sepolia]: {
-    /* ETH */
-    [DOLPHIN_ADDRESS]: {
-      chainId: NETWORK.mainnet,
-      address: DOLPHIN_ADDRESS
-    },
-    /* DAI */
-    '0xef38f21ec5477f6e3d4b7e9f0dea44a788c669b0': {
-      chainId: NETWORK.mainnet,
-      address: '0x6b175474e89094c44da98b954eedeac495271d0f'
-    },
-    /* USDC */
-    [USDC_TOKEN_ADDRESSES[NETWORK.optimism_sepolia]]: {
-      chainId: NETWORK.mainnet,
-      address: USDC_TOKEN_ADDRESSES[NETWORK.mainnet]
-    },
-    /* GUSD */
-    '0x68f92539f64e486f2853bb2892933a21b54829e5': {
-      chainId: NETWORK.mainnet,
-      address: '0x056fd409e1d7a124bd7017459dfea2f387b6d5cd'
-    },
-    /* WBTC */
-    '0x6c6a62b0861d8f2b946456ba9dcd0f3baec54147': {
-      chainId: NETWORK.mainnet,
-      address: '0x2260fac5e5542a773aa44fbcfedf7c193bc2c599'
-    },
-    /* WETH */
-    '0x4a61b6f54157840e80e0c47f1a628c0b3744a739': {
-      chainId: NETWORK.mainnet,
-      address: WRAPPED_NATIVE_ASSETS[NETWORK.mainnet] as Lowercase<Address>
-    },
-    /* POOL */
-    [NOUNS_TOKEN_ADDRESSES[NETWORK.optimism_sepolia].toLowerCase()]: {
-      chainId: NETWORK.mainnet,
-      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
-    }
-  },
-  [NETWORK.arbitrum_sepolia]: {
-    /* ETH */
-    [DOLPHIN_ADDRESS]: {
-      chainId: NETWORK.mainnet,
-      address: DOLPHIN_ADDRESS
-    },
-    /* DAI */
-    '0xfe045beefda06606fc5f441ccca2fe8c903e9725': {
-      chainId: NETWORK.mainnet,
-      address: '0x6b175474e89094c44da98b954eedeac495271d0f'
-    },
-    /* USDC */
-    [USDC_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia]]: {
-      chainId: NETWORK.mainnet,
-      address: USDC_TOKEN_ADDRESSES[NETWORK.mainnet]
-    },
-    /* WETH */
-    '0x060fad1bca90e5b1efca0d93febec96e638fd8a6': {
-      chainId: NETWORK.mainnet,
-      address: WRAPPED_NATIVE_ASSETS[NETWORK.mainnet] as Lowercase<Address>
-    },
-    /* POOL */
-    [NOUNS_TOKEN_ADDRESSES[NETWORK.arbitrum_sepolia].toLowerCase()]: {
-      chainId: NETWORK.mainnet,
-      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
-    }
-  },
-  [NETWORK.base_sepolia]: {
-    /* ETH */
-    [DOLPHIN_ADDRESS]: {
-      chainId: NETWORK.mainnet,
-      address: DOLPHIN_ADDRESS
-    },
-    /* DAI */
-    '0xe4b4a71923aecb4b8924bda8c31941a8ab50ff86': {
-      chainId: NETWORK.mainnet,
-      address: '0x6b175474e89094c44da98b954eedeac495271d0f'
-    },
-    /* USDC */
-    [USDC_TOKEN_ADDRESSES[NETWORK.base_sepolia]]: {
-      chainId: NETWORK.mainnet,
-      address: USDC_TOKEN_ADDRESSES[NETWORK.mainnet]
-    },
-    /* WETH */
-    '0x019aa44d02715e4042b1ba3b4d2fa9bcef33c002': {
-      chainId: NETWORK.mainnet,
-      address: WRAPPED_NATIVE_ASSETS[NETWORK.mainnet] as Lowercase<Address>
-    },
-    /* POOL */
-    [NOUNS_TOKEN_ADDRESSES[NETWORK.base_sepolia].toLowerCase()]: {
-      chainId: NETWORK.mainnet,
-      address: lower(NOUNS_TOKEN_ADDRESSES[NETWORK.mainnet])
     }
   }
 }
