@@ -17,7 +17,7 @@ export const VaultPagePrizesSection = (props: VaultPagePrizesSectionProps) => {
   // TODO: better title?
   return (
     <VaultPageCard
-      title={t_prizes('currentPrizes')}
+      title="Prizes Start 8/8"
       className='!p-0'
       wrapperClassName={classNames('bg-transparent shadow-none', className)}
     >
