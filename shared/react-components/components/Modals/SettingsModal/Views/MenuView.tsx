@@ -41,7 +41,7 @@ export const MenuView = (props: MenuViewProps) => {
         items={[
           {
             iconContent: SUPPORTED_CURRENCIES[selectedCurrency].symbol,
-            title: intl?.('changeCurrency') ?? 'Change Currency',
+            title: intl?.('changeCurrency') ?? 'Vault Factory',
             onClick: () => setView('currency'),
             disabled: disable?.includes('currency'),
             hidden: hide?.includes('currency')
@@ -49,15 +49,10 @@ export const MenuView = (props: MenuViewProps) => {
           {
             iconContent: selectedLanguage.toUpperCase(),
             iconClassName: '!text-base font-semibold',
-            title: intl?.('changeLanguage') ?? 'Change Language',
+            title: intl?.('changeLanguage') ?? 'Rewards Builder',
             onClick: () => setView('language'),
             disabled: disable?.includes('language'),
             hidden: hide?.includes('language')
-          },
-          {
-            iconContent: <SparklesIcon className='h-6 w-6 text-pt-purple-100' />,
-            title: intl?.('viewEcosystem') ?? 'View Ecosystem',
-            onClick: () => window.open(LINKS.ecosystem)
           },
           {
             iconContent: <ClipboardListIcon className='h-6 w-6 text-pt-purple-100' />,
@@ -76,13 +71,12 @@ export const MenuView = (props: MenuViewProps) => {
         ]}
       />
       <SettingsMenuSection
-        title={intl?.('getHelp') ?? 'Get Help'}
+        title={intl?.('viewEcosystem') ?? 'View Ecosystem'}
         items={[
           {
-            iconContent: '?',
-            iconClassName: 'font-semibold',
-            title: intl?.('getHelpWithCabana') ?? 'Get Help w/ Using Cabana',
-            onClick: () => window.open(LINKS.docs)
+            iconContent: <SparklesIcon className='h-6 w-6 text-pt-purple-100' />,
+            title: intl?.('viewEcosystem') ?? 'View Ecosystem',
+            onClick: () => window.open(LINKS.ecosystem)
           }
         ]}
       />

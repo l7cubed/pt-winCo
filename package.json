@@ -2,10 +2,13 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "turbo": "^2.0.3"
   },
   "devDependencies": {
     "@generationsoftware/hyperstructure-client-js": "workspace:*",
@@ -14,7 +17,6 @@
     "@heroicons/react": "^2.0.16",
     "@tanstack/react-query": "^5.20.5",
     "@trivago/prettier-plugin-sort-imports": "^4.1.0",
-    "@turbo/codemod": "^2.0.6",
     "@types/node": "^17.0.45",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
@@ -33,11 +35,9 @@
     "sonner": "^0.4.0",
     "tailwindcss": "^3.3.1",
     "tslib": "^2.6.0",
-    "turbo": "1.13.4",
     "typescript": "^5.0.4",
     "viem": "2.13.2",
-    "wagmi": "2.9.8",
-    "wrangler": "^3.62.0"
+    "wagmi": "2.9.8"
   },
   "packageManager": "pnpm@8.12.1"
 }

@@ -47,6 +47,7 @@ export const Footer = () => {
       content: [
         { content: t_footer('extensions'), href: LINKS.ecosystem },
         { content: t_footer('governance'), href: LINKS.governance },
+        { content: t_footer('grants'), href: LINKS.grants },
       ]
     },
     {
@@ -130,14 +131,6 @@ export const Footer = () => {
             </div>
           )
         })}
-      </div>
-      <div className='flex flex-col gap-1 items-center text-center text-sm text-pt-purple-100'>
-        <a href={LINKS.termsOfService} target='_blank' className='hover:underline'>
-          {t_footer('termsAndConditions')}
-        </a>
-        <a href={LINKS.privacyPolicy} target='_blank' className='hover:underline'>
-          {t_footer('privacyPolicy')}
-        </a>
       </div>
     </FlowbiteFooter>
   )
