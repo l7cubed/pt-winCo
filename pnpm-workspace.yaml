@@ -5,3 +5,4 @@ packages:
   - 'workers/*'
 
   - '!apps/analytics'
+  - '!apps/flash-liquidator'
