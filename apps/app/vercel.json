@@ -1,0 +1,11 @@
+// apps/app1/vercel.json
+{
+    "builds": [
+      {
+        "src": "next.config.js",
+        "use": "@vercel/next"
+      }
+    ],
+    "outputDirectory": "build"
+  }
+  
