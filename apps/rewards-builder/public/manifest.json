@@ -4,7 +4,7 @@
   "description": "Create and manage rewards for any PoolTogether prize vault.",
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#2BA36F",
+  "theme_color": "#488F31",
   "background_color": "#21064E",
   "display": "fullscreen",
   "icons": [

@@ -1,10 +1,10 @@
 {
-  "short_name": "Nouns Win",
-  "name": "Nouns Win",
+  "short_name": "POP",
+  "name": "POP",
   "description": "Browse, deposit into and withdraw from any number of PoolTogether vaults.",
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#2BA36F",
+  "theme_color": "#488F31",
   "background_color": "#21064E",
   "display": "fullscreen",
   "icons": [

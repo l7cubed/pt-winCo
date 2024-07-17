@@ -24,7 +24,7 @@ export const FaqSection = (props: FaqSectionProps) => {
       )
     },
     {
-      question: 'What is Nouns.win?',
+      question: 'What is POP?',
       answer: (
         <span>
           Nouns.win offers no loss savings strategies allowing users to win NOUNS token by using PoolTogether V5's audited contracts.{' '}

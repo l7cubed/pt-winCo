@@ -83,7 +83,7 @@ const AuditsBy = () => {
 const SocialIcons = () => {
   return (
     <div className='flex gap-4 items-center order-last md:order-none'>
-      <SimpleSocialIcon platform='twitter' href='https://x.com/nounsdao' />
+      <SimpleSocialIcon platform='twitter' href='https://x.com/myevmeco' />
     </div>
   );
 };

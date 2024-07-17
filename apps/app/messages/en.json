@@ -24,10 +24,10 @@
     "apr": "APR",
     "warning": "Warning",
     "getTokenAt": "Get {token} at",
-    "cabanaPoweredBy": "Nouns.Win is powered by",
+    "cabanaPoweredBy": "POP is powered by",
     "new": "New",
     "greatMigration": {
-      "joinTitle": "Join the Great <highlight>Pooly</highlight> Migration",
+      "joinTitle": "Join the Great <highlight></highlight> Migration",
       "joinButton": "Join the Migration",
       "migrateTo": "Migrate to the new PoolTogether",
       "earnUpTo": "and earn up to <highlight>{apr}% APR</highlight> in OP Bonus Rewards",
@@ -247,7 +247,7 @@
   "Footer": {
     "titles": {
       "getHelp": "About Pool Together",
-      "ecosystem": "About Nouns DAO",
+      "ecosystem": "About Proof of Pepe",
       "community": "About MyEVM",
       "settings": "Settings"
     },

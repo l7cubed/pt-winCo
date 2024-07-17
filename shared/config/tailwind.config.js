@@ -21,9 +21,9 @@ module.exports = {
         pt: {
           purple: {
             50: '#F5F0FF',
-            100: '#2BA36F',
-            200: '#2BA36F',
-            300: '#2BA36F',
+            100: '#488F31',
+            200: '#488F31',
+            300: '#488F31',
             400: '#162D1A',
             500: '#162D1A',
             600: '#191919',
@@ -33,9 +33,9 @@ module.exports = {
             DEFAULT: '#162D1A'
           },
           teal: {
-            light: '#2BA36F',
-            dark: '#2BA36F',
-            DEFAULT: '#2BA36F'
+            light: '#488F31',
+            dark: '#488F31',
+            DEFAULT: '#488F31'
           },
           pink: {
             light: '#FA48E8',

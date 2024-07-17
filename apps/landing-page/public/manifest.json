@@ -1,10 +1,10 @@
 {
-  "short_name": "Nouns Win",
+  "short_name": "POP Win",
   "name": "Landing Page",
   "description": "Welcome to a suite of open source interfaces and tools for the PoolTogether Hyperstructure.",
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#2BA36F",
+  "theme_color": "#488F31",
   "background_color": "#4C249F",
   "display": "fullscreen",
   "icons": [

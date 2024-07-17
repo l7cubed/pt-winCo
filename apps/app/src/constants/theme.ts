@@ -10,7 +10,7 @@ export const ptRainbowTheme = (): Theme => {
 
   const ptTheme: DeepPartial<Theme> = {
     colors: {
-      accentColor: '#2BA36F',
+      accentColor: '#488F31',
       connectButtonBackground: 'transparent',
       connectButtonText: '#fff'
     },
